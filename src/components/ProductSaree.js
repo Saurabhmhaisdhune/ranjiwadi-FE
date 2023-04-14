@@ -6,7 +6,7 @@ export default function ProductSaree({setSelectedproduct}) {
   const [iterms,setIterms]=useState();
 
   const getData = () => {
-    fetch("http://localhost:4000/collection")
+    fetch("https://rajwadi.onrender.com/collection")
       .then((response) => response.json())
       .then((data) => setIterms(data));
   };
