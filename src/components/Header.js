@@ -2,14 +2,14 @@ import React from "react";
 import "./Header.css";
 import {BsCart4} from "react-icons/bs";
 
-export default function Header(props) {
+export default function Header({count}) {
   return (
     <div className="header">
       <div className="upperheader">
         <div>Covid-19 T&C</div>
         <img src="https://www.rajwadi.com/image/data/logo.png" />
         <div>
-          <BsCart4/>SHOPPING CART<span>{props.count} item</span>
+          <BsCart4/>SHOPPING CART<span>{count} item</span>
         </div>
       </div>
       <div className="lowerheader">

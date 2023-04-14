@@ -7,15 +7,23 @@ import ProductDetails from "./ProductDetails";
 
 export default function Home() {
   const [selectedproduct, setSelectedproduct] = useState(null);
+  const [count, setCount] = useState(0);
   return (
     <div>
       <Navbar />
-      <Header />
+      <Header count={count} />
       {selectedproduct == null ? (
-        <ProductSaree setSelectedproduct={setSelectedproduct} />
+        <ProductSaree
+          setSelectedproduct={setSelectedproduct}
+         
+        />
       ) : (
-        <ProductDetails selectedproduct={selectedproduct}
-        setSelectedproduct={setSelectedproduct}/>
+        <ProductDetails
+          selectedproduct={selectedproduct}
+          setSelectedproduct={setSelectedproduct}
+          setCount={setCount}
+          count={count}
+        />
       )}
       <Footer />
     </div>

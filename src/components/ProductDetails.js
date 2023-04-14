@@ -7,18 +7,20 @@ import { FaRegThumbsUp, FaSignInAlt } from "react-icons/fa";
 export default function ProductDetails({
   selectedproduct,
   setSelectedproduct,
+  setCount,
+  count
 }) {
-  const [newval,setNewval]=useState(selectedproduct.price)
+
   const [selectedOption, setSelectedOption] = useState("0");
+
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
-    setNewval(selectedproduct.price+event.target.value);
   };
 
   const [selectedOptions, setSelectedOptions] = useState("0");
+
   const handleOptionChanges = (event) => {
     setSelectedOptions(event.target.value);
-    setNewval(selectedproduct.price+event.target.value);
   };
 
   return (
@@ -39,7 +41,7 @@ export default function ProductDetails({
           <span> Weight: <b>{selectedproduct.weight}</b></span>
         </p>
         <p>
-          Price: <span className="prices">₹ {selectedproduct.price} {newval}</span>
+          Price: <span className="prices">₹ {selectedproduct.price}</span>
         </p>
         <p className="prices">Made to Order</p>
         <div>
@@ -83,7 +85,6 @@ export default function ProductDetails({
         </div>
         <div>
           <h3 className="blouseline">Petticoat</h3>
-
           <li className="radioinput">
             <div>
               <input
@@ -125,7 +126,7 @@ export default function ProductDetails({
       <div className="buttons">
         <div className="mainbutton">
           <button className="addtocart">
-            <BsHandbag className="icons" />
+            <BsHandbag className="icons" onClick={()=>setCount(count+1)}/>
             Add To CART
           </button>
           <button className="buynow">
