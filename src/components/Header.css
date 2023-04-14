@@ -1,0 +1,21 @@
+.upperheader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 280px;
+  
+    border-bottom: 1px solid rgb(212, 212, 212);
+    padding: 20px;
+}
+.header{
+    font-family: Muli,Roboto,Arial,Helvetica,sans-serif;
+    font-weight: bold;
+}
+.category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    padding-bottom: 10px;
+}

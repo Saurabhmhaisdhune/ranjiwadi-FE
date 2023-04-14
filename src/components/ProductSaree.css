@@ -1,0 +1,17 @@
+.productsaree {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.saree {
+  justify-content: center;
+}
+.saree>p{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.sareeimg{
+  width: 400px;
+  height: 600px;
+}

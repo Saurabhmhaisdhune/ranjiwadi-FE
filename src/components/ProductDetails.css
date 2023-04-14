@@ -1,0 +1,101 @@
+.productdetails {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.imgee {
+  height: 600px;
+  width: 420px;
+}
+.title {
+  font-weight: 100;
+  font-size: 22px;
+}
+.mainbutton {
+  height: 130px;
+  width: 220px;
+  background-color: rgb(245, 245, 245);
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.addtocart {
+  background-color: #d83335;
+  width: 220px;
+  height: 40px;
+  color: white;
+  font-size: 15px;
+  border: none;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buynow {
+  background-color: rgb(0, 0, 0);
+  width: 220px;
+  height: 40px;
+  color: white;
+  font-size: 15px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.common {
+  background-color: white;
+  width: 240px;
+  height: 55px;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  border: 1px dashed grey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.icons {
+  font-weight: bold;
+  font-size: larger;
+  padding: 8px;
+}
+.about {
+  width: 480px;
+}
+.radioinput {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0px 4px 0px;
+}
+.radioinputul{
+    padding:0px 0px 0px -30px;
+}
+.blouseline{
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid rgb(227, 227, 227);
+}
+.prices{
+    color: #d83335;
+}
+.buttons{
+    padding-top: 40px;
+}
+.back{
+    position: relative;
+    left: 50px;
+    bottom: 165px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.back:hover{
+    cursor: pointer;
+    color: #d83335;
+
+}

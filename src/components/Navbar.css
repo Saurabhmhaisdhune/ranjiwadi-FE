@@ -1,0 +1,45 @@
+.account {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.currency {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.searchbar {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.searchinput {
+  background: #ee9898 none repeat scroll 0 0;
+  border: none;
+  color: #ffffff;
+  float: left;
+  font-size: 13px;
+  height: 26px;
+  margin-left: 0;
+  padding: 3px 6px !important;
+  text-indent: 6px;
+  width: 200px;
+  height: 30px;
+}
+.searchicon {
+  padding: 5px;
+  background: #ee9898;
+  color: #d83335;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #d83335;
+  font-family: Muli, Roboto, Arial, Helvetica, sans-serif;
+  justify-content: center;
+  gap: 300px;
+}
+::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+}
